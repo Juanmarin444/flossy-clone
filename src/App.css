@@ -1,38 +1,275 @@
-.App {
+header {
+  /* height: 100vh; */
+}
+
+.topBanner {
+  display: block;
+  height: auto;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ef6c52;
+  color: #fcfcfc;
+  font-size: 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topBannerText {
+  background-color: transparent;
+  width: 100%;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subBanner {
+  position: relative;
+  height: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('./images/smiling.png');
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.mainContainer {
+  position: static;
+  bottom: 0;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.bannerGrid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+}
+
+.contentContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  height: auto;
+  max-width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.divblock9 {
+  margin-top: 2em;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.heading {
+  width: 83%;
+  text-align: left;
+  font-family: 'Yeseva One', cursive;
+  position: static;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: 14px;
+  color: #191919;
+  font-size: 2.5em;
+  line-height: 1.1;
+
+}
+
+.logo {
+  text-decoration: none;
+  background-color: transparent;
+  width: 100%;
+  color: #ef6c52;
+  font-weight: 500;
+}
+
+.logoText {
+  color: #ef6c52;
+  font-size: 2.15em;
+}
+
+.list {
+  padding-left: 14px;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.listItem {
+  overflow: visible;
+  width: 1000px;
+  padding-left: 30px;
+  background-image: url('./images/checkmark.svg');
+  background-position: 0 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.div-flex {
+  position: relative;
+  display: block;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.app-store-link-wrapper {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.orange-button {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em 1em 0.5em 0.8em;
+  border-radius: 0.5em;
+  background-color: #ef6c52;
+  color: #fcfbfb;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1920px) {
+  .topBanner {
+    font-size: 1.5em;
   }
-  to {
-    transform: rotate(360deg);
+  .subBanner {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mainContainer {
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .contentContainer {
+    height: auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .heading {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    height: auto;
+  }
+  .topBanner {
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+  .subBanner {
+    min-height: 24em;
+  }
+  .contentContainer {
+    height: auto;
+    padding-left: 50px;
+  }
+
+  .contentContainer {
+    height: auto;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    overflow: visible;
+    height: auto;
+  }
+  .topBanner {
+    font-size: 1.25em;
+  }
+  .mainContainer {
+    height: auto;
+  }
+  .contentContainer {
+    height: auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .heading {
+    width: 90%;
+    font-size: 3.5em;
   }
 }
