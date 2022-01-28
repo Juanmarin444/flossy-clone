@@ -36,6 +36,8 @@
   bottom: 0;
   display: block;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
   padding-right: 0;
   padding-bottom: 40px;
@@ -43,6 +45,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: transparent;
+  max-width: 85%;
 }
 
 .bannerGrid {
@@ -52,6 +55,7 @@
 }
 
 .contentContainer {
+  position: relative;
   display: flex;
   width: 45%;
   height: auto;
@@ -116,7 +120,7 @@
   color: #ef6c52;
 }
 
-.orange-button {
+.orangeButton {
   display: inline-block;
   width: auto;
   padding: 0.5em 1em 0.5em 0.8em;
@@ -173,6 +177,70 @@
 
 /* Best Dentist */
 
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 18px;
+  }
+  .top-banner {
+    text-align: center;
+  }
+  .subBanner {
+    max-width: 100%;
+    background-position: 120% 100%;
+    background-size: 65%;
+  }
+  .mainContainer {
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 85%;
+  }
+  .contentContainer {
+    width: 65%;
+  }
+  .bannerGrid {
+    align-items: flex-end;
+  }
+  .subBannerContent {
+    width: 100%;
+  }
+  .listItem {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .subBanner {
+    background: none;
+  }
+  .subBannerContent {
+    width: 85%;
+  }
+  .bannerGrid {
+    justify-content: center;
+  }
+  .contentContainer {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .heading {
+    font-size: 1.75em;
+    padding-left: 0px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   header {
     height: auto;
@@ -215,7 +283,7 @@
   }
   .listItem {
     font-size: 1.7em;
-}
+  }
 }
 
 @media only screen and (min-width: 1920px) {

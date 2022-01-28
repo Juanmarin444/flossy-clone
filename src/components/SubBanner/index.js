@@ -24,7 +24,9 @@ const SubBanner = () => {
                 <li className="listItem"></li>
               </ul>
 
-              <a className="orange-button" href="#" >Find A Dentist Near You</a>
+              <div className="buttonContainer">
+                <a className="orangeButton" href="#" >Find A Dentist Near You</a>
+              </div>
 
             </div>
           </div>
